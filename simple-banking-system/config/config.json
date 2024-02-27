@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "root",
+    "password": "mysql-root",
+    "database": "bank-system-dev",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
