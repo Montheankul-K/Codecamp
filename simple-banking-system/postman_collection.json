@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "25ac3be3-ad8e-4b9d-8b01-486d1adabfe9",
+		"name": "Codecamp Banking System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25675685"
+	},
+	"item": [
+		{
+			"name": "Get managers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost:8000}}/managers",
+					"host": [
+						"{{localhost:8000}}"
+					],
+					"path": [
+						"managers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get branches",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost:8000}}/branches",
+					"host": [
+						"{{localhost:8000}}"
+					],
+					"path": [
+						"branches"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create branches",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"manager_name\": \"Jonnsmith\",\n    \"manager_experience\": 7,\n    \"branch_name\": \"Avenue\",\n    \"branch_size\": \"XL\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost:8000}}/branches",
+					"host": [
+						"{{localhost:8000}}"
+					],
+					"path": [
+						"branches"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create manager",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Devid\",\n    \"experience\": 4\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost:8000}}/managers",
+					"host": [
+						"{{localhost:8000}}"
+					],
+					"path": [
+						"managers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update manager",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Jonathan\",\n    \"experience\": 8\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost:8000}}/managers/5",
+					"host": [
+						"{{localhost:8000}}"
+					],
+					"path": [
+						"managers",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete manager",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{localhost:8000}}/managers/6",
+					"host": [
+						"{{localhost:8000}}"
+					],
+					"path": [
+						"managers",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get manager by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost:8000}}/managers/1",
+					"host": [
+						"{{localhost:8000}}"
+					],
+					"path": [
+						"managers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get managers experience more than 3 years",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost:8000}}/managers/experience3",
+					"host": [
+						"{{localhost:8000}}"
+					],
+					"path": [
+						"managers",
+						"experience3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
